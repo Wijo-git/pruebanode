@@ -225,7 +225,7 @@
 <soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://qas-po.cafam.dom:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BC_ConsultaInterna&amp;receiverParty=&amp;receiverService=&amp;interface=ConsultarInfoEmprAfil_ConsultaInterna_Out&amp;interfaceNamespace=http%3A%2F%2Fconsultainterna.cafam.com%2Fws_empresasafiliadas"/>
 </wsdl:port>
 <wsdl:port name="HTTPS_Port" binding="p1:ConsultarInfoEmprAfil_ConsultaInterna_OutBinding">
-<soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="https://qas-po.cafam.dom:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BC_ConsultaInterna&amp;receiverParty=&amp;receiverService=&amp;interface=ConsultarInfoEmprAfil_ConsultaInterna_Out&amp;interfaceNamespace=http%3A%2F%2Fconsultainterna.cafam.com%2Fws_empresasafiliadas"/>
+<soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="https://qas-po.cafam.dom:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BC_ConsultaInterna&amp;receiverParty=&amp;receiverService=&amp;interface=ConsultarInfoEmprAfil_ConsultaInterna_Out&amp;interfaceNamespace=http%3A%2F%2Fconsultainterna.cafam.com%2Fws_empresasafiliadas"/>
 </wsdl:port>
 </wsdl:service>
 </wsdl:definitions>
