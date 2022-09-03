@@ -1,0 +1,231 @@
+<wsdl:definitions xmlns:p1="http://consultainterna.cafam.com/ws_empresasafiliadas" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="ConsultarInfoEmprAfil_ConsultaInterna_Out" targetNamespace="http://consultainterna.cafam.com/ws_empresasafiliadas">
+<wsdl:documentation/>
+<wsp:UsingPolicy wsdl:required="true"/>
+<wsp:Policy wsu:Id="OP_ConsultarInfoEmprAfil_ConsultaInterna_Out"/>
+<wsdl:types>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://consultainterna.cafam.com/ws_empresasafiliadas" targetNamespace="http://consultainterna.cafam.com/ws_empresasafiliadas">
+<xsd:element name="ConsultarInfoEmprAfil_ConsultaInternaRequest" type="InfoEmpAfil_ConsultaInterna_Request"/>
+<xsd:element name="ConsultarEmprInfoAfil_ConsultaInternaResponse" type="InfoEmpAfil_ConsultaInterna_Response"/>
+<xsd:complexType name="InfoEmpAfil_ConsultaInterna_Request">
+<xsd:annotation>
+<xsd:documentation xml:lang="EN">Parámetro para obtener Datos empresa afiliada Consulta interna</xsd:documentation>
+<xsd:appinfo source="http://sap.com/xi/VersionID">705a44f1f08b11e1a1ded48564ee0302</xsd:appinfo>
+</xsd:annotation>
+<xsd:sequence>
+<xsd:element name="DOCUMENTO" type="xsd:string" minOccurs="0"/>
+<xsd:element name="TIPODOCUMENTO" type="xsd:string" minOccurs="0"/>
+<xsd:element name="TIPOEMP" type="xsd:string" minOccurs="0"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="InfoEmpAfil_ConsultaInterna_Response">
+<xsd:annotation>
+<xsd:documentation xml:lang="EN">Consulta información Empresa Afiliada para Consulta Interna</xsd:documentation>
+<xsd:appinfo source="http://sap.com/xi/VersionID">de8113c0f3ef11e1a259d48564ee0302</xsd:appinfo>
+</xsd:annotation>
+<xsd:sequence>
+<xsd:element name="InfoEmpresa">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def926ef3d911e1b1a700016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="TipoIdentificacion" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9260f3d911e19cc800016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="NIT" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9261f3d911e1921b00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="TipoEmpresa" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9262f3d911e1c82500016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="RazonSocial" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9263f3d911e1c5c000016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="FechaIngreso" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9264f3d911e19c5200016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="FechaRetiro" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9265f3d911e1c01100016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="Direccion" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9266f3d911e1b8d900016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="Telefono" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9267f3d911e183e700016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="NumeroFax" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9268f3d911e1951200016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="Email" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def9269f3d911e1cf6b00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="CantidadTrabajadores" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def926af3d911e1896600016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="EstadoEmpresa" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def926bf3d911e1846a00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="NombreJefePersonal" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def926cf3d911e1ce0100016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="NombreRepresentanteLegal" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">5def926df3d911e18bf900016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="Info_Ley_1429" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">663d50a3f3da11e18a4e00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="FecInscrRgMerc" type="xsd:date" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">663d50a0f3da11e1aac400016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="ClasApoEmp" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">663d50a1f3da11e18c5d00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="DescClaseApoEmp" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">663d50a2f3da11e19bf500016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="FecInBeneficio" type="xsd:date" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">d83a91d0f3db11e1b09a00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="PerInBeneficio" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">d83a91d1f3db11e1cda000016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="FecDesistimiento" type="xsd:date" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">d83a91d2f3db11e1a99900016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="PerDesEmp" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">d83a91d3f3db11e1c69400016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="PorcBenEmpAfil" type="xsd:double" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">d83a91d4f3db11e1c36d00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="NroMesBen" type="xsd:integer" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">d83a91d5f3db11e18f6d00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="Info_Ley_590" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">34564814f3dc11e1942b00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="PorcEmpMipyme" type="xsd:double" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">34564810f3dc11e1a37300016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="ClasApoEmp" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">34564811f3dc11e1962300016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="FecFundEmp" type="xsd:date" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">34564812f3dc11e1cd4f00016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element name="CampoMiPymes" type="xsd:string" minOccurs="0">
+<xsd:annotation>
+<xsd:appinfo source="http://sap.com/xi/TextID">34564813f3dc11e1ad7100016c5fd8c5</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
+</wsdl:types>
+<wsdl:message name="ConsultarInfoEmprAfil_ConsultaInternaRequest">
+<wsdl:documentation/>
+<wsdl:part name="ConsultarInfoEmprAfil_ConsultaInternaRequest" element="p1:ConsultarInfoEmprAfil_ConsultaInternaRequest"/>
+</wsdl:message>
+<wsdl:message name="ConsultarEmprInfoAfil_ConsultaInternaResponse">
+<wsdl:documentation/>
+<wsdl:part name="ConsultarEmprInfoAfil_ConsultaInternaResponse" element="p1:ConsultarEmprInfoAfil_ConsultaInternaResponse"/>
+</wsdl:message>
+<wsdl:portType name="ConsultarInfoEmprAfil_ConsultaInterna_Out">
+<wsdl:documentation/>
+<wsdl:operation name="ConsultarInfoEmprAfil_ConsultaInterna_Out">
+<wsdl:documentation/>
+<wsp:Policy>
+<wsp:PolicyReference URI="#OP_ConsultarInfoEmprAfil_ConsultaInterna_Out"/>
+</wsp:Policy>
+<wsdl:input message="p1:ConsultarInfoEmprAfil_ConsultaInternaRequest"/>
+<wsdl:output message="p1:ConsultarEmprInfoAfil_ConsultaInternaResponse"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="ConsultarInfoEmprAfil_ConsultaInterna_OutBinding" type="p1:ConsultarInfoEmprAfil_ConsultaInterna_Out">
+<soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="ConsultarInfoEmprAfil_ConsultaInterna_Out">
+<soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="http://sap.com/xi/WebService/soap1.1"/>
+<wsdl:input>
+<soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="ConsultarInfoEmprAfil_ConsultaInterna_OutService">
+<wsdl:port name="HTTP_Port" binding="p1:ConsultarInfoEmprAfil_ConsultaInterna_OutBinding">
+<soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://qas-po.cafam.dom:50000/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BC_ConsultaInterna&amp;receiverParty=&amp;receiverService=&amp;interface=ConsultarInfoEmprAfil_ConsultaInterna_Out&amp;interfaceNamespace=http%3A%2F%2Fconsultainterna.cafam.com%2Fws_empresasafiliadas"/>
+</wsdl:port>
+<wsdl:port name="HTTPS_Port" binding="p1:ConsultarInfoEmprAfil_ConsultaInterna_OutBinding">
+<soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="https://qas-po.cafam.dom:50001/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BC_ConsultaInterna&amp;receiverParty=&amp;receiverService=&amp;interface=ConsultarInfoEmprAfil_ConsultaInterna_Out&amp;interfaceNamespace=http%3A%2F%2Fconsultainterna.cafam.com%2Fws_empresasafiliadas"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>
